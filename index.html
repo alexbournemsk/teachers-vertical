@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Видео</title>
+
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@vime/core@^5/themes/default.css"
+/>
+
+<!-- Optional light theme (extends default). ~400B -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@vime/core@^5/themes/light.css"
+/>
+
+<!-- Library and all of its components are lazy loaded, so nothing to sweat about here. ~3kB -->
+<script
+  type="module"
+  src="https://cdn.jsdelivr.net/npm/@vime/core@^5/dist/vime/vime.esm.js"
+></script>
+</head>
+<body>
+  <vm-player controls>
+    <vm-video cross-origin="true" poster="https://media.vimejs.com/poster.png">
+      <!-- These are passed directly to the underlying HTML5 `<video>` element. -->
+      <!-- Why `data-src`? Lazy loading, you can always use `src` if you prefer.  -->
+      <source data-src="https://user30887.clients-cdnnow.ru/uploads/vladislav-ivanov-615c62c0d67dc225593897.mp4" type="video/mp4" />
+      <track
+        default
+        kind="subtitles"
+        src="https://media.vimejs.com/subs/english.vtt"
+        srclang="en"
+        label="English"
+      />
+    </vm-video>
+  
+    <!-- ... -->
+  </vm-player>
+</body>
+</html>

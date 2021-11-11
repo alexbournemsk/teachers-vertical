@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap');
+:root {
+  --overlay-color: ;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #F9FAFC;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: 'Open sans', sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 44px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-family: 'Open sans', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  font-family: Open sans, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 950px;
+  background-color: #fff;
+  margin: 20px 40px;
+  display: flex;
+  box-shadow: 4px 4px 9px -3px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding-top: 20px;
+  padding-left: 50px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  /* grid-template-rows: 2fr 10fr; */
+}
+
+.block-video {
+  background-color: var(--overlay-color);
+  max-width: 275px;
+  margin-bottom: 30px;
+}
+
+.video-w {
+  position: relative;
+  width: 240px;
+  height: 425px;
+  background-color: rgb(210, 226, 226);
+  border-radius: 10px;
+}
+
+.video-w img {
+  width: 240px;
+  height: 425px;
+}
+
+.block-description {
+  background-color: var(--overlay-color);
+  max-width: 500px;
+  margin-top: 65px;
+  margin-left: 30px;
+}
+
+.block-logo {
+  background-color: var(--overlay-color);
+  margin-left: auto;
+}
+
+.block-logo img {
+  width: 63px;
+  height: 63px;
+}
+
+/* Видео часть */
+
+video {
+  display: block;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.play-btn {
+  position: absolute;
+  top: 44%;
+  left: 40.5%;
+  z-index: 10;
+  width: 20%;
+  height: 20%;
+}
+
+.play-btn__svg {
+  transition: 1s;
+  fill: #ffffff;
+  opacity: .5;
+}
+
+.play-btn:hover .play-btn__svg {
+  fill: #ffffff;
+  opacity: 1;
+}
+
+@media only screen and (max-width: 640px) {
+  .container {
+    flex-direction: column;
+    padding-left: 5%;    
+    margin-left: 5%;
+    margin-right: 5%;
+
+  }
+  .block-video {
+    margin-bottom: 0px;
+  }
+  .block-description {
+    margin-left: 0;
+    margin-top: 42px;
+  }
+
+  .block-logo {
+    order: -1;
+  }
+}

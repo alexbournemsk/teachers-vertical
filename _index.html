@@ -1,0 +1,51 @@
+<!-- 
+*Разместить вертикальное видео 
+*Убрать дефолтное управление
+*Настроить свою кнопку 
+*Сделать красивый дизайн
+*Сверстать новый дизайн
+
+-Сделать массовую генерацию страниц
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+
+  <title>Видео</title>
+
+
+</head>
+
+<body>
+
+  <h1>Педагог вокала</h1>
+
+  <div class="container">
+
+    <div class="video-wrapper">
+      <div class='play-btn' id='play'>
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26">
+            <polygon class="play-btn__svg" points="9.33 6.69 9.33 19.39 19.3 13.04 9.33 6.69" />
+            <path class="play-btn__svg"
+              d="M26,13A13,13,0,1,1,13,0,13,13,0,0,1,26,13ZM13,2.18A10.89,10.89,0,1,0,23.84,13.06,10.89,10.89,0,0,0,13,2.18Z" />
+          </svg> </a>
+      </div>
+      <video id='my-player' name="media" webkit-playsinline playsinline>
+        <source src="./video.mp4" type="video/mp4">
+      </video>
+    </div>
+
+  </div>
+
+
+</body>
+<script src="./script.js"></script>
+
+</html>

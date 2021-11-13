@@ -10,9 +10,11 @@ body {
   padding: 0;
 }
 
+
+
 h1 {
   font-family: 'Open sans', sans-serif;
-  font-size: 32px;
+  font-size: 28px;
   font-style: normal;
   font-weight: 800;
   line-height: 44px;
@@ -55,8 +57,8 @@ h3 {
   border-radius: 10px;
   padding-top: 20px;
   padding-left: 50px;
-  padding-bottom: 10px;
-  padding-right: 20px;
+  padding-bottom: 0px;
+  padding-right: 0px;  
   /* grid-template-rows: 2fr 10fr; */
 }
 
@@ -87,14 +89,26 @@ h3 {
 }
 
 .block-logo {
+  display: flex;
+  flex-direction: column;
   background-color: var(--overlay-color);
   margin-left: auto;
+  justify-content: space-between;
+  align-content: flex-end;
+  align-items: flex-end;
 }
 
-.block-logo img {
-  width: 63px;
-  height: 63px;
+.block-logo .logo {
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
 }
+
+.mic {
+  opacity: 50%;
+ }
+
+
 
 /* Видео часть */
 
@@ -129,7 +143,7 @@ video {
     flex-direction: column;
     padding-left: 5%;    
     margin-left: 5%;
-    margin-right: 5%;
+    margin-right: 5%;    
 
   }
   .block-video {
@@ -138,9 +152,20 @@ video {
   .block-description {
     margin-left: 0;
     margin-top: 42px;
+    margin-bottom: 20px;
   }
 
   .block-logo {
     order: -1;
   }
+
+  .block-logo .logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .mic {
+    display: none;
+  }
 }
+

@@ -12,8 +12,8 @@
 <body>
   <div class="container">
     <div class="block-video">
-      <h2>Педагог вокала</h2>
-      <h1>Доброслав Иванов</h1>
+      <h2 id = 'subject'></h2>
+      <h1 id = 'full-name'></h1>
       <div class = 'video-w'>       
           <div class='play-btn' id='play'>
             <a href="#">
@@ -24,27 +24,25 @@
               </svg> </a>
           </div>
           <video id='my-player' name="media" webkit-playsinline playsinline>
-            <source src="./video.mp4" type="video/mp4">
+            <source id = 'video-src' src="./video.mp4" type="video/mp4">
           </video>        
         <!-- <img src="./video.jpg" alt=""> -->
       </div>      
     </div>
 
     <div class="block-description">
-      <h3>Образование</h3>
-      <p>Российская академия имени Гнесиных. (Магистр, ассистент-стажёр)
-      </p>
-      <h3>Достижения</h3>
-      <p>— Хормейстер хора РАМ им. Гнесиных
-        — Лауреат всероссийских и международных конкурсов
-        — Стаж преподавательской деятельности 8 лет
-        </p>
+      <h3> Образование</h3>
+      <p id = 'education'></p>
+      <h3 > Достижения</h3>
+      <p id = 'achievements'></p>
       <h3>Предпочтения</h3>
-      <p>— Джаз, рок</p>
+      <p id = 'genre'></p>
     </div>
 
     <div class="block-logo">
-      <img src="./logo_sq_opacity.png" alt="">
+      <img class = 'logo' src="./logo_sq_opacity.png" alt="Логотип">
+      <img class = 'mic' src="./mic.png" alt="">
+
     </div>
   </div>
 

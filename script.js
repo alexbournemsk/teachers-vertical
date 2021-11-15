@@ -84,7 +84,7 @@ teacherEnglishNameGet = getUrlVar().name;
 let teacherId = '';
 try {
   teacherId = teachers.find(item => item.eName == teacherEnglishNameGet).id;
-  teacherName.textContent = teachers[teacherId].fullName;
+  teacherName.innerHTML = teachers[teacherId].fullName;
   teacherSubject.textContent = teachers[teacherId].subject;
   teacherEducation.innerHTML = teachers[teacherId].education;
   teacherAchievements.innerHTML = teachers[teacherId].achievements;
